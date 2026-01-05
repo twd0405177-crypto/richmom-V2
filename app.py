@@ -366,7 +366,7 @@ with st.expander("🤫 懶人秘密：如何讓 APP 記住我的設定？"):
     
     # 用程式自動抓取目前使用者輸入的內容
     if st.button("🔗 生成我的專屬連結"):
-        base_url = "https://richmom-accounting-sisters.streamlit.app/" 
+        base_url = "https://richmom-sisters-v2.streamlit.app/" 
         
         # 進行網址編碼，確保中文和特殊符號不會出錯
         params = []
@@ -380,3 +380,4 @@ with st.expander("🤫 懶人秘密：如何讓 APP 記住我的設定？"):
         st.code(final_url, language="text")
 
         st.success("👆 複製上面這個網址，加到「加入主畫面」或「我的最愛」，下次連卡片都不用重打囉！")
+
