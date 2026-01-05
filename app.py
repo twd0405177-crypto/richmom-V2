@@ -74,6 +74,13 @@ with st.sidebar:
     user_banks = [x.strip() for x in user_banks_str.split(",") if x.strip()]
     
     all_payment_methods = ["現金"] + user_cards + user_banks
+# --- 👇 請補上這一段 👇 ---
+    st.divider()
+    st.header("🎯 預算與警示")
+    monthly_budget = st.number_input("本月總預算 (元)", value=20000, step=1000)
+    alert_threshold = st.number_input("🚨 單筆警示金額", value=3000, step=500)
+    # --- 👆 補上結束 👆 ---
+
 
     st.divider()
     if "gcp_service_account" in st.secrets:
@@ -371,4 +378,5 @@ with st.expander("🤫 懶人秘密：如何讓 APP 記住我的設定？"):
         final_url = base_url + "?" + "&".join(params)
         
         st.code(final_url, language="text")
+
         st.success("👆 複製上面這個網址，加到「加入主畫面」或「我的最愛」，下次連卡片都不用重打囉！")
