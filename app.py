@@ -15,7 +15,7 @@ import urllib.parse
 st.set_page_config(page_title="RichMom 懶人記帳", page_icon="logo.png", layout="centered")
 
 # --- 強制注入 Logo 給 iPhone ---
-logo_url = "https://raw.githubusercontent.com/twd0405177-crypto/richmom-accounting/main/logo.png"
+logo_url = "https://raw.githubusercontent.com/twd0405177-crypto/richmom-V2/main/logo.png"
 st.markdown(
     f"""
     <head>
@@ -380,4 +380,5 @@ with st.expander("🤫 懶人秘密：如何讓 APP 記住我的設定？"):
         st.code(final_url, language="text")
 
         st.success("👆 複製上面這個網址，加到「加入主畫面」或「我的最愛」，下次連卡片都不用重打囉！")
+
 
